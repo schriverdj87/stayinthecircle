@@ -16,6 +16,9 @@ Use the arrow keys to control the yellow cone inside the bouncing platform. Ther
 #Explanation of Files
 
 ArrayClip.py: Automatically presents an item from an array using an ever changing index which usually increases by 1 and then goes back to 0 when it reaches the end of the array. Ideal for handling animation frames. Meant to function similarily to MovieClip within Flash. Used by StayInTheCircle.py
+
 StayInTheCircle.py: The presentation layer. It is responsible for relaying input from the player to the core game and using PyGame to add visuals and sound to the core game for the player. Uses StayInTheCircleCore.py.
+
 StayInTheCircleCore.py: The actual abstract game that functions independently from PyGame, visuals, and audio. In here everything is math and geometry so it needs the StayInTheCircle.py to create and audio visual experience so the player can see what's going on. Makes use of TrigJacknife.py.
+
 TrigJacknife.py: Contains home-made point and rectangle classes along with trigonmetric functions. All essential for making a game like this.
